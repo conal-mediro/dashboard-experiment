@@ -1,0 +1,94 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.198.72.20200728-083130"
+    },
+    "id": "bb09cf36-8234-46f8-8e4a-ec66bf97c9dd",
+    "dashboardMetadata": {
+        "name": "Template Overview",
+        "shared": false,
+        "owner": "Conal.Buchanan@mediro-ict.co.za",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": ""
+        }
+    },
+    "tiles": [{
+        "name": "Host health",
+        "tileType": "HOSTS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 38,
+            "width": 228,
+            "height": 228
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Application health",
+        "tileType": "APPLICATIONS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 304,
+            "width": 228,
+            "height": 228
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Service health",
+        "tileType": "SERVICES",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 38,
+            "width": 228,
+            "height": 228
+        },
+        "tileFilter": {},
+        "chartVisible": true
+    }, {
+        "name": "Problems",
+        "tileType": "OPEN_PROBLEMS",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 304,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 38,
+            "width": 494,
+            "height": 304
+        },
+        "tileFilter": {},
+        "customName": "User sessions query results",
+        "query": "select useraction.apdexCategory, count(useraction.apdexCategory) from usersession where useraction.application='easyTravel' group by useraction.apdexCategory",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 38,
+            "width": 494,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## USER EXPERIENCE [ⓘ](https://hky02010.live.dynatrace.com/#dashboard;gtf=l_2_HOURS;gf=all;id=8ff5f3aa-3df4-45ef-a0eb-3ce787c55fd3)"
+    }]
+}
