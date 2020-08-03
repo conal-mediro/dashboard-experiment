@@ -5,7 +5,7 @@
     },
     "id": "bb09cf36-8234-46f8-8e4a-ec66bf97c9dd",
     "dashboardMetadata": {
-        "name": "Template Overview",
+        "name": "${overviewName} Overview",
         "shared": false,
         "owner": "Conal.Buchanan@mediro-ict.co.za",
         "sharingDetails": {
@@ -89,6 +89,6 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## USER EXPERIENCE [ⓘ](https://hky02010.live.dynatrace.com/#dashboard;gtf=l_2_HOURS;gf=all;id=8ff5f3aa-3df4-45ef-a0eb-3ce787c55fd3)"
+        "markdown": "## USER EXPERIENCE [\uD83D\uDEC8](#dashboard;id=8ff5f3aa-3df4-45ef-a0eb-3ce787c55fd3)"
     }]
 }
