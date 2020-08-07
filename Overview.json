@@ -5,7 +5,7 @@
     },
     "id": "3c02d504-17e4-40e9-9644-78485629ffc1",
     "dashboardMetadata": {
-        "name": "Overview",
+        "name": "${overviewName} Overview",
         "shared": false,
         "owner": "Conal.Buchanan@mediro-ict.co.za",
         "sharingDetails": {
